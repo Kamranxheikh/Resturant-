@@ -47,7 +47,7 @@ function Footer() {
 
         <div className="text-center justify-center  items-center sm:text-left">
           <h2 className="font-bold text-lg mb-10 text-gray-700 ">Gallery</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 ml-14 sm:ml-0 mx-auto w-72 h-auto gap-1 sm:justify-center items-center md:justify-start ">
+          <div className="grid grid-cols-2 md:grid-cols-3 ml-1 sm:ml-0 mx-auto w-72 h-auto gap-1 sm:justify-center items-center md:justify-start ">
         <img src={f2} alt="Gallery item"className='w-40 h-auto lg:- h-auto' />
             <img src={f3} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
             <img src={f4} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
