@@ -1,9 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import f2 from '../assets/images/f2.png';
-import f3 from '../assets/images/f3.png';
-import f4 from '../assets/images/f4.png';
-import f5 from '../assets/images/f5.png';
+// import f2 from '../assets/images/f2.png';
+// import f3 from '../assets/images/f3.png';
+// import f4 from '../assets/images/f4.png';
+// import f5 from '../assets/images/f5.png';
+import dr2 from '../assets/images/dr2.jpeg';
+import dr3 from '../assets/images/dr3.jpeg';
+import main1 from '../assets/images/main1.jpeg';
+import main2 from '../assets/images/main2.jpeg';
+import main3 from '../assets/images/main3.jpeg';
+import dr4 from '../assets/images/dr4.jpeg';
+
 
 
 
@@ -11,7 +18,7 @@ function Footer() {
   return (
     <>
     <footer className="bg-gray-300 py-8 ">
-      <div className="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 sm:ml-48  sm:mr-48 space-x-10">
+      <div className="max-w-9xl mx-auto grid grid-cols-1  md:grid-cols-4 gap-8 sm:ml-48  sm:mr-48 space-x-10">
         <div className="text-center md:text-left text-gray-700">
           <h2 className="font-bold text-lg">LOGO</h2>
           <p className="my-4">Lorem ipsum dolor sit amet</p>
@@ -45,15 +52,15 @@ function Footer() {
           <Link to={"/"} className="my-2">FAQ</Link>
         </div>
 
-        <div className="text-center justify-center  items-center sm:text-left">
+        <div className="text-center justify-center  items-center ">
           <h2 className="font-bold text-lg mb-10 text-gray-700 ">Gallery</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 ml-1 sm:ml-0 mx-auto w-72 h-auto gap-1 sm:justify-center items-center md:justify-start ">
-        <img src={f2} alt="Gallery item"className='w-40 h-auto lg:- h-auto' />
-            <img src={f3} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
-            <img src={f4} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
-            <img src={f2} alt="Gallery item"className='w-40 h-auto sm:w-48 h-96' />
-            <img src={f5} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
-            <img src={f5} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-1 w-72 h-auto  sm:justify-center items-center md:justify-start ">
+        <img src={dr4} alt="Gallery item"className='w-40 h-auto lg:- h-auto' />
+            <img src={dr2} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
+            <img src={dr3} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
+            <img src={main1} alt="Gallery item"className='w-40 h-auto sm:w-48 h-96' />
+            <img src={main2} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
+            <img src={main3} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
           </div>
         </div>
       </div>
