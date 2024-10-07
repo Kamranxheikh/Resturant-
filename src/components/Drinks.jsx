@@ -39,8 +39,8 @@ const Drinks = () => {
         <>
             <div className='mt-10'>
                 {DrinksData.map((drink, index) => (
-                    <div key={index} className='flex py-6 space-x-6 md:space-x-20 border-b-2 border-gray-300 mx-10 sm:mx-16 md:mx-24'>
-                        <img src={drink.img} alt={drink.name} className='w-32 h-32 md:w-48 md:h-40' /> 
+                    <div key={index} className='flex py-6 space-x-3 md:space-x-20 border-b-2 border-gray-300 mx-10 sm:mx-16 md:mx-24'>
+                        <img src={drink.img} alt={drink.name} className='w-28 h-28 md:w-48 md:h-40' /> 
                         <h1 className='text-xl mt-8 sm:text-2xl md:text-3xl'>{drink.name}</h1>
                         <div className='flex justify-end'>
                             <h1 className='flex mt-8 text-xl sm:text-2xl md:text-3xl sm:pl-52 md:pl-96'>{drink.price}</h1>
