@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import home1 from '../assets/images/home1.jpg';
+import be from '../assets/images/be.png';
+
 import restu from '../assets/images/restu.png';
 import restu2 from '../assets/images/restu2.png';
 import home3 from '../assets/images/home3.png';
@@ -10,6 +12,7 @@ import OurServices from '../components/OurServices';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import FoodCategory from '../components/FoodCategory';
+import SideNav from '../components/SideNav';
 import { FaHome, FaInfoCircle, FaCheck } from "react-icons/fa";
 import { RiRestaurant2Fill } from "react-icons/ri";
 import { IoFastFood, IoCall } from "react-icons/io5";
@@ -24,14 +27,16 @@ const Home = () => {
                         <img 
                             src={home1} 
                             alt="Home Background" 
-                            className="hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 blur-sm md:blur-md lg:blur-md w-full h-[100vh]" 
+                            className="hover:shadow-2xl blur-sm h-[500px] md:blur-md lg:blur-md w-full md:h-[100vh] 
+               md:transition duration-500 md:ease-in-out md:transform md:hover:-translate-y-1 md:hover:scale-105 " 
                         />
                     </div>
                     <div className="w-full h-auto">
                         <img 
                             src={home1} 
                             alt="Home Accent" 
-                            className="hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 w-full h-[100vh] rounded-lg border-b-11" 
+                            className="hover:shadow-2xl h-[500px]  w-full md:h-[100vh] rounded-lg border-b-11
+                             md:transition duration-500 md:ease-in-out md:transform md:hover:-translate-y-1 md:hover:scale-105 " 
                         />
                     </div>
                     <div className="absolute py-6 z-40 lg:left-32 top-40 sm:top-36 md:top-36 bg-opacity-24 lg:top-60 bottom-0 text-white bg-opacity-200 rounded-lg">
@@ -42,30 +47,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <SideNav />
 
-            <nav className='fixed  right-5 h-auto flex flex-col items-center justify-center space-y-6 bg-black bg-opacity-50 p-4  rounded-l-lg sm:fixed md:fixed top-40 rounded-xl w-fit z-50'>
-                <Link to="/" className='flex flex-col items-center text-white'>
-                <FaHome size={24} />
-                    <span>Home</span>
-                </Link>
-                <Link to="/Menu" className='flex flex-col items-center text-white'>
-                    <RiRestaurant2Fill size={24} />
-                    <span>Menu</span>
-                </Link>
-                <Link to="/Franchise" className='flex flex-col items-center text-white'>
-                    <IoFastFood size={24} />
-                    <span>Franchise</span>
-                </Link>
-                <Link to="/About" className='flex flex-col items-center text-white'>
-                    <FaInfoCircle size={24} />
-                    <span>About</span>
-                </Link>
-                <Link to="/Contact" className='flex flex-col items-center text-white'>
-                    <IoCall size={24} />
-                    <span>Contact Us</span>
-                </Link>
-                
-            </nav>
+           
 
             <div className='sm:grid grid-cols-2 w-full  '>
                 <div className='flex flex-col  justify-center sm:items-start  lg:items-start   mt-10 p-5  '>
@@ -107,7 +91,16 @@ const Home = () => {
 
             <FoodCategory/>
 
-            <div className="relative bg-cover bg-center  hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105   h-96 mt-20 bg-[url('./src/assets/images/be.png')]">
+            {/* <div className="relative bg-cover bg-center  hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105   h-96 mt-20 bg-[url('./src/assets/images/be.png')]">
+                <div className="absolute  inset-0  space-y-8 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center">
+                    <h1 className="text-white text-6xl mb-2">Book Early & Save</h1>
+                    <p className="text-white text-2xl mb-5">Lorem ipsum dolor sit amet consectetur.</p>
+                    <button className="bg-teal-500 text-white font-semibold py-2 px-6  rounded hover:bg-teal-600">
+                        Book Now
+                    </button>
+                </div>
+            </div> */}
+             <div className="relative bg-cover bg-center  hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105   h-96 mt-20"  style={{ backgroundImage: `url(${be})` }} >
                 <div className="absolute  inset-0  space-y-8 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center">
                     <h1 className="text-white text-6xl mb-2">Book Early & Save</h1>
                     <p className="text-white text-2xl mb-5">Lorem ipsum dolor sit amet consectetur.</p>

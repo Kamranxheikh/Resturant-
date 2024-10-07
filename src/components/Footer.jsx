@@ -1,5 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import f2 from '../assets/images/f2.png';
+import f3 from '../assets/images/f3.png';
+import f4 from '../assets/images/f4.png';
+import f5 from '../assets/images/f5.png';
+
+
 
 function Footer() {
   return (
@@ -42,12 +48,12 @@ function Footer() {
         <div className="text-center justify-center  items-center sm:text-left">
           <h2 className="font-bold text-lg mb-10 text-gray-700 ">Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 ml-14 sm:ml-0 mx-auto w-72 h-auto gap-1 sm:justify-center items-center md:justify-start ">
-            <img src="./src/assets/images/f5.png" alt="Gallery item"className='w-40 h-auto lg:- h-auto' />
-            <img src="./src/assets/images/f2.png" alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
-            <img src="./src/assets/images/f3.png" alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
-            <img src="./src/assets/images/f4.png" alt="Gallery item"className='w-40 h-auto sm:w-48 h-96' />
-            <img src="./src/assets/images/f5.png" alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
-            <img src="./src/assets/images/f4.png" alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
+        <img src={f2} alt="Gallery item"className='w-40 h-auto lg:- h-auto' />
+            <img src={f3} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
+            <img src={f4} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
+            <img src={f2} alt="Gallery item"className='w-40 h-auto sm:w-48 h-96' />
+            <img src={f5} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
+            <img src={f5} alt="Gallery item"className='w-40 h-auto md:w-48 h-auto' />
           </div>
         </div>
       </div>

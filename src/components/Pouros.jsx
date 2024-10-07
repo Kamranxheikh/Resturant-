@@ -26,7 +26,7 @@ const Pouros = () => {
                     <p className='text-xl md:text-3xl text-gray-500 font-sans'>{Pouros.Number}</p>
                 </div>
                 <div className='px-6 py-4 '>
-                <img src={Pouros.img} alt={Pouros.name} className='h-[400px] w-full object-cover'/>
+                <img src={Pouros.img} alt={Pouros.name} className='h-[350px] md:h-[400px] w-full object-cover'/>
 
                 </div>
 

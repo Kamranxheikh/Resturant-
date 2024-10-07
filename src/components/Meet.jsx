@@ -39,7 +39,7 @@ const Meet = () => {
                 {
                     chefsData.map((chef, index) => (
                         <div key={index}
-                            className="flex flex-col border-2 border-gray-900   justify-center sm:h-[300px] md:h-[400px] items-center w-full h-[500px] rounded-lg 
+                            className="flex flex-col border-2 border-gray-900   justify-center sm:h-[300px] md:h-[400px] items-center w-full h-[350px] rounded-lg 
                             shadow-4xl bg-white hover:shadow-3xl transition duration-500 ease-in-out transform 
                             hover:-translate-y-1 hover:scale-105 mb-10"
                             style={{ backgroundImage: `url(${chef.img})`, backgroundSize: "cover", backgroundPosition: "center" }}>

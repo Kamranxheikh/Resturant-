@@ -6,25 +6,26 @@ import { IoFastFood, IoCall } from "react-icons/io5";
 
 const SideNav = () => {
   return (
-    <nav className='fixed  right-8 h-auto flex flex-col items-center justify-center space-y-6 bg-black bg-opacity-50 p-4  rounded-l-lg sm:fixed md:fixed top-40 rounded-xl w-fit z-50'>
+    <nav className='fixed  md:right-8 right-0 h-auto  flex flex-col items-center justify-center space-y-2 md:space-y-6
+     bg-black bg-opacity-50 p-4  rounded-l-lg sm:fixed md:fixed md:top-40 top-28 rounded-xl w-fit z-50'>
     <Link to="/" className='flex flex-col items-center text-white'>
-    <FaHome size={24} />
+    <FaHome md:size={24} size={18} />
         <span>Home</span>
     </Link>
     <Link to="/Menu" className='flex flex-col items-center text-white'>
-        <RiRestaurant2Fill size={24} />
+        <RiRestaurant2Fill md:size={24} size={18} />
         <span>Menu</span>
     </Link>
     <Link to="/Franchise" className='flex flex-col items-center text-white'>
-        <IoFastFood size={24} />
+        <IoFastFood md:size={24} size={18} />
         <span>Franchise</span>
     </Link>
     <Link to="/About" className='flex flex-col items-center text-white'>
-        <FaInfoCircle size={24} />
+        <FaInfoCircle md:size={24} size={18} />
         <span>About</span>
     </Link>
     <Link to="/Contact" className='flex flex-col items-center text-white'>
-        <IoCall size={24} />
+        <IoCall md:size={24} size={18} />
         <span>Contact Us</span>
     </Link>
 </nav>

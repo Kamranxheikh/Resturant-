@@ -62,7 +62,7 @@ const ImageSlider2 = () => {
       <Slider {...settings}  >
         {images.map(image => (
           <div key={image.id} >
-            <img src={image.src} alt={image.alt} className="w-full h-[500px] border-2 border-gray-500 rounded-md shadow-md border-spacing-2 " />
+            <img src={image.src} alt={image.alt} className="w-full h-[350px] md:h-[500px] border-2 border-gray-500 rounded-md shadow-md border-spacing-2 " />
           </div>
         ))}
       </Slider>
