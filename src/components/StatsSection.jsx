@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPizzaSlice, faClipboardList, } from '@fortawesome/free-solid-svg-icons';
 import { RiRestaurant2Fill } from "react-icons/ri";
 import { IoFastFood } from "react-icons/io5";
+import main5 from '../assets/images/main5.jpeg';
+
+
 
 const StatsSection = () => {
     const stats = [
@@ -31,7 +34,7 @@ const StatsSection = () => {
     return (
         <>
             <div className=" py-10 relative  my-16 h-96 w-full"  >
-                <img src='/src/assets/images/main5.jpeg  ' className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 absolute inset-0 w-full h-80 md:h-96 brightness-[30%] ">
+                <img src={main5} className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 absolute inset-0 w-full h-80 md:h-96 brightness-[30%] ">
                 </img>
 
                 <div className="relative md:px-20 sm:px-10   md:mt-16 grid grid-cols-2  md:grid-cols-4  sm:grid-cols-2 gap-4    justify-center items-center text-white text-center  ">

@@ -29,7 +29,7 @@ const Menu = () => {
         </div>
       </div>
 
-      <div className='flex mt-20 justify-center items-center sm:text-3xl md:text-4xl text-gray-500 text-lg font-customSerif space-x-1 sm:space-x-8 md:space-x-16'>
+      <div className='flex mt-20 justify-center space-x-4 items-center sm:text-3xl md:text-4xl text-gray-500 text-sm font-customSerif  sm:space-x-8 md:space-x-16'>
         <Link to="starter">
           <h1 className='hover:underline hover:text-black'>STARTER</h1>
         </Link>

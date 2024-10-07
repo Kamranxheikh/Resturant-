@@ -38,7 +38,7 @@ const MainCourse = () => {
         <>
             <div className='mt-10'>
                 {mainCourseData.map((item, index) => (
-                    <div key={index} className='flex py-6 space-x-1 md:space-x-20 border-b-2 border-gray-300 mx-10 sm:mx-16 md:mx-24'>
+                    <div key={index} className='flex py-6 space-x-6 md:space-x-20 border-b-2 border-gray-300 mx-10 sm:mx-16 md:mx-24'>
                         <img src={item.img} alt={item.name} className='w-32 h-32  md:w-48 md:h-40' />
                         <h1 className='text-xl mt-8 sm:text-2xl justify-start  md:text-3xl'>{item.name}</h1>
                         <div className='flex justify-end'>
